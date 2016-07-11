@@ -16,6 +16,8 @@ import 'angular-ui-router';
 import 'angular-resource';
 // import 'boosted';
 import routesConfig from './routes';
+import 'boosted/dist/css/bootstrap-orange2015.css';
+import 'boosted/dist/css/boosted2015.css';
 
 import './index.less';
 
