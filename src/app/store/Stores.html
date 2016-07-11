@@ -1,0 +1,52 @@
+<div class="component">
+  <h2>{{$ctrl.text}}</h2>
+
+  <form name="myForm" novalidate>
+    
+    <label for="">city</label>
+    <input type="text" name="" ng-model="$ctrl.city" />
+    <br>
+    
+    <label for="">postal code</label>
+    <input type="text" name="" ng-model="$ctrl.postalCode" />
+    <br>
+    
+    <input  type="submit" class="btn btn-default" ng-click="$ctrl.handleSearch()" value="search">
+
+  </form>
+
+<br>
+
+  <hr>
+
+  <div>
+
+    <table class="table table-striped">
+
+      <thead>
+        <tr>
+          <th scope="col" class="header">id</th>
+          <th scope="col" class="header">name</th>
+          <th scope="col" class="header">address1</th>
+          <th scope="col" class="header">postalCode</th>
+          <th scope="col" class="header">city</th>
+          <th scope="col" class="header">phoneNumber</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        <tr ng-repeat="store in $ctrl.stores track by store.id">
+          <td>{{store.id}}</td>
+          <td>{{store.name}}</td>
+          <td>{{store.address1}}</td>
+          <td>{{store.postalCode}}</td>
+          <td>{{store.city}}</td>
+          <td>{{store.phoneNumber}}</td>
+        </tr>
+      </tbody>
+
+    </table>
+
+  </div>
+
+</div>
