@@ -3,3 +3,4 @@
 /// <reference path="globals/angular/index.d.ts" />
 /// <reference path="globals/jasmine/index.d.ts" />
 /// <reference path="globals/jquery/index.d.ts" />
+/// <reference path="angularjs/angular-resource.d.ts" />
