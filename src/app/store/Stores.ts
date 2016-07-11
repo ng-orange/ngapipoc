@@ -12,7 +12,7 @@ class StoresController {
   limit:number;
 
   constructor(private storeService:StoreService) {
-    this.text = 'orange store research';
+    this.text = 'orange store';
   }
   
   handleSearch() {
@@ -32,7 +32,7 @@ class StoresController {
   
 }
 
-export const stores = {
+export const Stores = {
   templateUrl: 'app/store/Stores.html',
   controller: StoresController
 };

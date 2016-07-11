@@ -1,21 +1,26 @@
 <div class="component">
+  
   <h2>{{$ctrl.text}}</h2>
 
-  <form name="myForm" novalidate>
-    
-    <label for="">city</label>
-    <input type="text" name="" ng-model="$ctrl.city" />
-    <br>
-    
-    <label for="">postal code</label>
-    <input type="text" name="" ng-model="$ctrl.postalCode" />
-    <br>
-    
-    <input  type="submit" class="btn btn-default" ng-click="$ctrl.handleSearch()" value="search">
+<form name="searchForm" class="form-horizontal" novalidate>
+  <div class="form-group">
+    <label for="city" class="col-sm-2 control-label">city</label>
+    <div class="col-sm-6">
+      <input class="form-control required" ng-model="$ctrl.city" required="" aria-required="true" name="city" id="city" type="text">
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="postalCode" class="col-sm-2 control-label">postalCode</label>
+    <div class="col-sm-6">
+      <input class="form-control required" ng-model="$ctrl.postalCode" required="" aria-required="true" name="postalCode" id="postalCode" type="text">
+    </div>
+  </div>
 
-  </form>
+  <div class="center">
+    <button type="submit" ng-click="$ctrl.handleSearch()" class="btn btn-primary">search</button>
+  </div>
+</form>
 
-<br>
 
   <hr>
 
